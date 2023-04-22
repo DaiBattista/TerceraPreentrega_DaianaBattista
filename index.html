@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
-    <meta name="description" content="Super Mario Bros La Película está rompiendo todos los récords en taquilla, al público general le ha encantado y esto se nota tanto en las ventas como en el éxito de canciones como Peaches, de Jack Black.">
+    <meta name="description"
+        content="Super Mario Bros La Película está rompiendo todos los récords en taquilla, al público general le ha encantado y esto se nota tanto en las ventas como en el éxito de canciones como Peaches, de Jack Black.">
     <meta name="robots" content="index, follow">
     <title>The Super Mario Bros Movie</title>
 </head>
@@ -34,9 +35,11 @@
     </header>
     <main>
         <section>
-            <video id="peaches__song" class="header__video" src="./media/peaches_song.mp4" autoplay="true" loop
-                alt="Jack Black canta la cancion de la princesa Peach">Tu navegador no soporta el formato de
-                video</video>
+            <video id="peaches__song" class="header__video" autoplay muted playsinline>
+                <source src="./media/peaches_song.mp4" alt="Jack Black canta la cancion de la princesa Peach">
+                <source src="./media/peaches_song.ogg" alt="Jack Black canta la cancion de la princesa Peach">>
+                Tu navegador no soporta el formato de video
+            </video>
         </section>
         <section class="header__flex">
             <div class="header__text">
@@ -110,6 +113,6 @@
         </div>
     </footer>
     <script src="./js/scripts.js"></script>
-    </body>
+</body>
 
 </html>
