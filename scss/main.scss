@@ -1,0 +1,12 @@
+@import "./base";
+
+/*Acá van los componentes, antes de pages*/
+@import "./components/navbar";
+@import "./components/btn";
+@import "./components/footer";
+
+@import "./pages/index";
+@import "./pages/personajes";
+@import "./pages/sinopsis";
+@import "./pages/trailers";
+@import "./pages/historia";
