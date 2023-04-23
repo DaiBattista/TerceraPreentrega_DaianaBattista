@@ -107,6 +107,7 @@
     grid-area: 1 / 2 / 2 / 6;
     margin-top: 15%;
     margin-bottom: 15%;
+    text-align: center;
 }
 
 .main__thumbnails1 {
@@ -197,6 +198,12 @@
 }
 
 /*Responsive*/
+@media (max-width: 912px) {
+    .header__logo__img {
+        width: 40vw;
+    }
+}
+
 @media (max-width: 768px) {
     .header__video {
         height: 100%;
@@ -233,7 +240,7 @@
         grid-area: 1 / 1 / 2 / 2;
         display: flex;
         justify-content: center;
-        width: 100%;
+        text-align: center;
     }
 
     .main__thumbnails1 {
@@ -284,11 +291,5 @@
     .main__review__img {
         grid-area: 7 / 1 / 8 / 2;
         justify-content: center;
-    }
-}
-
-@media (max-width: 912px) {
-    .header__logo__img {
-        width: 40vw;
     }
 }

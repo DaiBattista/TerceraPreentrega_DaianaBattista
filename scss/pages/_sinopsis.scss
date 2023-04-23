@@ -1,67 +1,77 @@
-.main__sinopsis {
-    grid-area: 1 / 1 / 2 / 7;
-    padding: 50px;
+@mixin grilla ($columns, $rows) {
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
 }
 
-.main__container__sinopsis {
-    display: flex;
-    flex-direction: row;
-    grid-area: 2 / 1 / 7 / 7;
-}
-
-.main__sinopsis__img {
-    display: flex;
-    grid-area: 2 / 1 / 7 / 4;
-}
-
-.sinopsis__img {
-    width: 50vw;
+.secondary__container {
+    display: grid;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "secondary__description secondary__description"
+        "secondary__img secondary__txt";
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90vw;
     padding: 5%;
+    @include grilla (repeat(2, 1fr), repeat(2, auto))
 }
 
-.main__sinopsis__txt {
-    grid-area: 2 / 4 / 7 / 7;
-    padding: 5%;
+.secondary__description {
+    grid-area: secondary__description;
+    margin-bottom: 5%;
 }
 
-@media (max-width: 768px) {
-    .main__sinopsis {
-        grid-area: 1 / 1 / 2 / 2;
-        margin-top: -50vh;
+.secondary__img {
+    grid-area: secondary__img;
+    display: flex;
+    align-items: start;
+    
+}
+
+.img__sinopsis {
+    width: 40vw;
+    padding: 20px;
+    }
+
+
+.secondary__txt {
+    grid-area: secondary__txt;
+}
+
+
+
+@media only screen and (max-width:980px) and (min-width: 5px) {
+    .secondary__container {
+        display: grid;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "secondary__description secondary__description"
+            "secondary__img secondary__img"
+            "secondary__txt secondary__txt";
+        width: 90vw;
+        @include grilla (repeat(2, 1fr), repeat(3, auto))
+    }
+
+    .secondary__description {
+        grid-area: secondary__description;
+    }
+
+    .secondary__img {
+        grid-area: secondary__img;
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
     }
 
-    .main__container__sinopsis {
-        grid-area: 2 / 1 / 4 / 2;
-        display: flex;
-        flex-direction: column;
+    .img__sinopsis {
+        width: 90vw;
+        }
+
+    .secondary__txt {
+        grid-area: secondary__txt;
     }
 
-    .main__sinopsis__img {
-        grid-area: 2 / 1 / 3 / 2;
-    }
-
-    .sinopsis__img {
-        background-size: cover;
-        width: 100%;
-        padding: 0%;
-    }
-
-    .main__sinopsis__txt {
-        grid-area: 3 / 1 / 4 / 2;
-    }
-}
-
-@media (max-width: 920px) {
-    .main__container__sinopsis {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .sinopsis__img {
-        width: 100vw;
-        padding: 0%;
-    }
 }
