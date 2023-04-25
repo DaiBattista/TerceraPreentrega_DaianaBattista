@@ -1,14 +1,9 @@
-@mixin grilla ($columns, $rows) {
-    grid-template-columns: $columns;
-    grid-template-rows: $rows;
-}
-
 .secondary__container {
     display: grid;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-        "secondary__description secondary__description"
+        "secondary__description secondary__description" 
         "secondary__img secondary__txt";
     justify-content: center;
     align-items: center;

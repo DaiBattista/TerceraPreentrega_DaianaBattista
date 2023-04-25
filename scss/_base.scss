@@ -50,6 +50,11 @@ p {
     color: $color-complementario;
 }
 
+@mixin grilla ($columns, $rows) {
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+}
+
 @media (max-width: 768px) {
 h1 {
     font-size: 2.5em;
