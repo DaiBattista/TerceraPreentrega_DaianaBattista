@@ -257,11 +257,12 @@ header .nav__menu {
 .header__flex {
   display: flex;
   flex-wrap: wrap;
-  width: 99.9vw;
+  width: 98vw;
   height: 100vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .header__text {
@@ -477,7 +478,7 @@ header .nav__menu {
   gap: 20px 20px;
   grid-auto-flow: row;
   grid-template-areas: "title_personajes title_personajes title_personajes title_personajes title_personajes title_personajes" "personaje__img1 personaje__img1 personaje__img2 personaje__img2 personaje__img3 personaje__img3" "personaje__img1 personaje__img1 personaje__img2 personaje__img2 personaje__img3 personaje__img3" "personaje__img4 personaje__img4 personaje__img5 personaje__img5 personaje__img6 personaje__img6" "personaje__img4 personaje__img4 personaje__img5 personaje__img5 personaje__img6 personaje__img6" "personaje__img7 personaje__img7 personaje__img8 personaje__img8 personaje__img9 personaje__img9" "personaje__img7 personaje__img7 personaje__img8 personaje__img8 personaje__img9 personaje__img9";
-  width: 90vw;
+  width: 88vw;
   padding: 5%;
   justify-content: center;
   align-items: center;
@@ -588,7 +589,7 @@ header .nav__menu {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 90vw;
+  width: 88vw;
   padding: 5%;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, auto);
