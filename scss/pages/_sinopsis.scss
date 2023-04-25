@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 90vw;
+    width: 88vw;
     padding: 5%;
     @include grilla (repeat(2, 1fr), repeat(2, auto))
 }
@@ -30,12 +30,9 @@
     padding: 20px;
     }
 
-
 .secondary__txt {
     grid-area: secondary__txt;
 }
-
-
 
 @media only screen and (max-width:980px) and (min-width: 5px) {
     .secondary__container {
@@ -68,5 +65,4 @@
     .secondary__txt {
         grid-area: secondary__txt;
     }
-
 }

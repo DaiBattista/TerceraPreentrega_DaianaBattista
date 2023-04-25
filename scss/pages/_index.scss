@@ -55,11 +55,12 @@
 .header__flex {
     display: flex;
     flex-wrap: wrap;
-    width: 99.9vw;
+    width: 98vw;
     height: 100vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .header__text {
@@ -196,6 +197,7 @@
     width: 60%;
     padding: 30px;
 }
+
 
 /*Responsive*/
 @media (max-width: 912px) {
